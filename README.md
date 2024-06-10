@@ -43,6 +43,18 @@ The Mouny-app is under the [MIT license](https://opensource.org/licenses/MIT).
 - `sail up -d`
 - `php artisan migrate:refresh --seed`
 
+```
+git init
+git branch -m master main
+git branch
+git status
+git push -u origin main
+git add .
+git commit -m "Laravel 11 fresh install"
+git remote add origin https://github.com/tigrouuu/mouny_app.git
+git push -u origin main
+```
+
 
 
 
