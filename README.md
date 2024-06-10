@@ -1,61 +1,13 @@
-## Links
+## What's Mouny app
 
-Link to use all site functions :
+The application is a product that we present through a landing page.
 
-- [The site link](http://mouny-app/)
-- [phpMyAdmin](http://mouny-app:8080/)
-- [Mailpit](http://mouny-app:8025/)
+We use [Laravel 11](https://laravel.com/docs/11.x/installation) as well as [MaryUI](https://mary-ui.com/), [Livewire 3](https://livewire.laravel.com/), [Volt](https://livewire.laravel.com/docs/volt) and [Filament](https://filamentphp.com/).
 
-## How to install the application
+A simple site, which gets to the point, that is to say presenting our product.
 
-MaryUI / Volt :
-```
-php artisan mary:install
-npm run dev
-php artisan migrate
-```
-
-`yarn add --D daisyui tailwindcss postcss autoprefixer`
-
-Then, install Breeze
-
-## How to launch the application
-
-```
-sail up -d
-sail stop
-sail down
-docker stop $(docker ps -aq)
-docker compose down -v
-sail down -v
-```
+To run the landing page on your computer, I refer you to the [INSTALL.md](https://github.com/tigrouuu/mouny_app/blob/main/INSTALL.md) page.
 
 ## License
 
 The Mouny-app is under the [MIT license](https://opensource.org/licenses/MIT).
-
-
-## Ordre d'installation
-
-- `curl -s https://laravel.build/mouny-app | bash`
-- `sudo nano etc/hosts`, add : `127.0.0.1 mouny-app 127.0.0.1 mysql`
-- `cd ./mouny-app && sail build --no-cache`
-- `sail up -d`
-- `php artisan migrate:refresh --seed`
-
-```
-git init
-git branch -m master main
-git branch
-git status
-git push -u origin main
-git add .
-git commit -m "Laravel 11 fresh install"
-git remote add origin https://github.com/tigrouuu/mouny_app.git
-git push -u origin main
-```
-
-
-
-
-- `ez`, then `alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'`
