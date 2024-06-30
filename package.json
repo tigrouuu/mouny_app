@@ -3,24 +3,27 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "lint": "eslint --ext .js ./",
+        "lint:fix": "eslint --fix --ext .js ./",
+        "format": "prettier --write \"./**/*.{js,jsx,json,css}\"",
+        "build": "vite build",
+        "preview": "vite preview --open",
+        "buildpreview": "vite build && vite preview --open"
     },
     "devDependencies": {
-        "@tailwindcss/forms": "^0.5.2",
         "autoprefixer": "^10.4.19",
         "axios": "^1.6.4",
-        "daisyui": "^4.12.2",
+        "gulp": "^5.0.0",
         "laravel-vite-plugin": "^1.0",
         "postcss": "^8.4.38",
+        "preline": "^2.3.0",
         "prettier": "^3.3.2",
         "prettier-plugin-tailwindcss": "^0.6.5",
         "tailwindcss": "^3.4.4",
         "vite": "^5.0"
     },
     "dependencies": {
-        "glob": "^10.4.2",
         "lucide": "^0.396.0",
-        "preline": "^2.3.0",
         "prettier-plugin-blade": "^2.1.16"
     }
 }

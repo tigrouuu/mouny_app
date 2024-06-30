@@ -14,8 +14,7 @@
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.4",
         "livewire/volt": "^1.0",
-        "mallardduck/blade-lucide-icons": "^1.21",
-        "robsontenorio/mary": "^1.32"
+        "mallardduck/blade-lucide-icons": "^1.21"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.13",
@@ -37,7 +36,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/Helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -49,8 +51,13 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
         ],
+        "pre-update-cmd": [
+            "@php artisan clear-compiled"
+        ],
         "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "@php artisan cache:clear",
+            "@php artisan optimize:clear"
         ],
         "post-install-cmd": [],
         "post-root-package-install": [
