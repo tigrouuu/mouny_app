@@ -1,0 +1,21 @@
+# https://humanstxt.org/FR
+# https://humanstxt.org/img/oficial-logos/humanstxt-transparent-color.png
+
+/* TEAM */
+	Chef: Jérémy Bey
+	Contact: hello [at] humanstxt.org
+	Twitter: @jeremybey
+	From: Marseille, Bouches-du-Rhône, France
+
+/* THANKS */
+
+	(First) The game designer: Harmony Tessier
+	Twitter: @harmonytessier
+	From: Marseille, Bouches-du-Rhône, France
+
+/* SITE */
+	Last update: 2024/06/28
+	Language: French / English
+    Standards: HTML5, CSS3
+    Components: Bootstrap, Laravel
+	IDE: PhpStorm
